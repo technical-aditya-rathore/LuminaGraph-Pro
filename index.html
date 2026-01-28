@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symmetry Pro | Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ui-panel">
+        <h1>Symmetry <span class="accent">Pro</span></h1>
+        
+        <div class="control-group">
+            <label>Symmetry Points: <span id="pointVal">12</span></label>
+            <input type="range" id="pointsSlider" min="2" max="30" value="12">
+        </div>
+
+        <div class="control-group">
+            <label>Neon Hue</label>
+            <input type="color" id="colorPicker" value="#00f2ff">
+        </div>
+
+        <div class="control-group">
+            <label>Brush Size</label>
+            <input type="range" id="sizeSlider" min="1" max="10" value="2">
+        </div>
+
+        <div class="button-stack">
+            <button id="clearBtn">Clear Canvas</button>
+            <button id="saveBtn" class="primary">Export PNG</button>
+        </div>
+        
+        <p class="hint">Pro Tip: Draw fast for thinner lines!</p>
+    </div>
+
+    <canvas id="mainCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
